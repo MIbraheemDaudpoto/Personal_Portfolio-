@@ -15,10 +15,13 @@
 
 </head>
 
-<body class="bg-gray-900 text-white" id="home">
+<body class="bg-gray-900 text-white">
 
     <!-- Here is our Navbar -->
-    <header class="flex justify-between items-center p-6 ">
+    <header class="flex justify-between items-center p-6 " style=" position: sticky;
+    top: -28px;
+    transition: all;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));">
         <h1 class="text-3xl font-bold text-highlight" style="cursor: pointer;">
             Mr.Coder
         </h1>
@@ -51,9 +54,9 @@
     </header>
 
     <!-- Here is our Content section-->
-    <section class="text-center py-20 cover">
+    <section class="text-center py-20 cover" id="home">
         <div class="image">
-            <img class="mx-auto rounded-full" height="550" width="500" src="img/cover.png" alt="Cover Photo">
+            <img class="mx-auto rounded-full" height="550" width="500" src="img/cover.webp" alt="Cover Photo">
         </div>
         <div>
             <h2 class="text-4xl font-bold">Hello,</h2>
@@ -84,7 +87,7 @@
     <!-- Here is our About section-->
     <section class="flex justify-center items-center py-20 bg-gray-800" id="about">
         <div class="w-1/2 text-center">
-            <img alt="Muhammad Ibraheem" class="mx-auto rounded-full" height="300" src="img/Picture.png" width="300" />
+            <img alt="Muhammad Ibraheem" class="mx-auto rounded-full" height="300" src="img/Picture.webp" width="300" />
         </div>
         <div class="w-1/2 px-10">
             <h2 class="text-3xl font-bold">
@@ -183,26 +186,7 @@
         </div>
 
         <!-- Here is 2nd row -->
-        <div class="flex justify-center mt-10">
-            <div class="w-1/3 px-4 text-center">
-                <i class="fa-brands fa-react fa-5x" style="color: #00d8ff;"></i>
-                <h3 class="text-xl font-bold mt-4">
-                    React
-                </h3>
-            </div>
-            <div class="w-1/3 px-4 text-center">
-                <i class="fa-brands fa-angular fa-5x" style="color: #a6120d;"></i>
-                <h3 class="text-xl font-bold mt-4">
-                    Angular
-                </h3>
-            </div>
-            <div class="w-1/3 px-4 text-center">
-                <i class="fa-brands fa-node-js fa-5x" style="color: #3c873a;"></i>
-                <h3 class="text-xl font-bold mt-4">
-                    Node.js
-                </h3>
-            </div>
-        </div>
+     
     </section>
 
     <!-- here is projects sections -->
@@ -213,21 +197,21 @@
         <div class="flex justify-center mt-10">
             <div class="w-1/3 px-4">
                 <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
-                    src="assets/Certificates/udamy01.jfif" width="300" />
+                    src="assets/Certificates/udamy01.webp" width="300" />
                 <h3 class="text-xl font-bold mt-4 " style="text-align: center;">
                     Complete JAVASCRIPT with HTML5,CSS3 from zero to Expert-2024
                 </h3>
             </div>
             <div class="w-1/3 px-4">
                 <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
-                    src="assets/Certificates/udamy 30 projects.jpg" width="300" />
+                    src="assets/Certificates/udamy 30 projects.webp" width="300" />
                 <h3 class="text-xl font-bold mt-4" style="text-align: center;">
                     Master JavaScript, HTML, and CSS with 30 Projects in 30 Days
                 </h3>
             </div>
             <div class="w-1/3 px-4">
                 <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
-                    src="assets/Certificates/codeAlphaCertificate.jfif" width="300" />
+                    src="assets/Certificates/codeAlphaCertificate.webp" width="300" />
                 <h3 class="text-xl font-bold mt-4" style="text-align: center;">
                     Internship Certificate By CodeAlpha
                 </h3>
@@ -238,14 +222,14 @@
         <div class="flex justify-center mt-10">
             <div class="w-1/3 px-4">
                 <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
-                    src="assets/Certificates/recommendation.jfif" width="300" />
+                    src="assets/Certificates/recommendation.webp" width="300" />
                 <h3 class="text-xl font-bold mt-4 " style="text-align: center;">
                     Letter of Recommendation by CodeAlpha
                 </h3>
             </div>
             <div class="w-1/3 px-4">
                 <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
-                    src="assets/Certificates/offer letter.jfif" width="300" />
+                    src="assets/Certificates/offer letter.webp" width="300" />
                 <h3 class="text-xl font-bold mt-4" style="text-align: center;">
                     Offer Letter for Internship By CodeAlpha
                 </h3>
@@ -293,27 +277,27 @@
         </h2>
         <div class="flex justify-center mt-10">
             <div class="w-1/5 px-4 text-center ">
-                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Nabi Bux.jpg"
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Nabi Bux.webp"
                     width="100" />
                 <h4>Nabi Bux</h4>
             </div>
             <div class="w-1/5 px-4 text-center ">
-                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Bari.jpg"
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Bari.webp"
                     width="100" />
                 <h4>Abdul Bari</h4>
             </div>
             <div class="w-1/5 px-4 text-center ">
-                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Fakir.png"
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Fakir.webp"
                     width="100" />
                 <h4>Fakir Muhammad</h4>
             </div>
             <div class="w-1/5 px-4 text-center ">
-                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/wazir.jpg"
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/wazir.webp"
                     width="100" />
                 <h4>Wazir Rajar</h4>
             </div>
             <div class="w-1/5 px-4 text-center ">
-                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/naeem.jpg"
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/naeem.webp"
                     width="100" />
                 <h4>Naeem Chopan</h4>
             </div>
