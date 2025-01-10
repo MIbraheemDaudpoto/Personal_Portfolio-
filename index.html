@@ -1,0 +1,354 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Muhammad Ibraheem Portfolio
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-900 text-white" id="home">
+
+    <!-- Here is our Navbar -->
+    <header class="flex justify-between items-center p-6 ">
+        <h1 class="text-3xl font-bold text-highlight" style="cursor: pointer;">
+            Mr.Coder
+        </h1>
+        <nav class="space-x-6 parent" >
+            <a class="hover:text-highlight items" href="#home">
+                Home
+            </a>
+            <a class="hover:text-highlight items" href="#about">
+                About
+            </a>
+            <a class="hover:text-highlight items" href="#skills">
+                Skills
+            </a>
+            <a class="hover:text-highlight items" href="#certificates">
+                Certificates
+            </a>
+            <a class="hover:text-highlight items" href="#Resume">
+                Resume
+            </a>
+            <a class="hover:text-highlight items" href="#contact">
+                Contact
+            </a>
+        </nav>
+        <a href="#contact">
+            <button
+                class="bg-highlight text-black px-6 py-3 mt-6 rounded hover:bg-black hover:text-white transition duration-300">
+                Hire Me
+            </button>
+        </a>
+    </header>
+
+    <!-- Here is our Content section-->
+    <section class="text-center py-20 cover">
+        <div class="image">
+            <img class="mx-auto rounded-full" height="550" width="500" src="img/cover.png" alt="Cover Photo">
+        </div>
+        <div>
+            <h2 class="text-4xl font-bold">Hello,</h2>
+            <h1 class="text-6xl font-bold mt-4">I'm <span class="text-highlight">Muhammad Ibraheem</span></h1>
+            <p class="mt-4 text-lg">
+                I'm a <span id="animated-text" class="text-highlight"></span>
+            </p>
+            <a href="assets/Muhammad Ibraheem CV (Frontend Developer).pdf" target="_blank">
+                <button
+                    class="bg-highlight text-black px-6 py-3 mt-6 rounded hover:bg-black hover:text-white transition duration-300">Download
+                    CV</button>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var options = {
+                strings: ["Frontend Developer", "Freelancer", "UI/UX Designer"],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true
+            };
+            var typed = new Typed("#animated-text", options);
+        });
+    </script>
+
+    <!-- Here is our About section-->
+    <section class="flex justify-center items-center py-20 bg-gray-800" id="about">
+        <div class="w-1/2 text-center">
+            <img alt="Muhammad Ibraheem" class="mx-auto rounded-full" height="300" src="img/Picture.png" width="300" />
+        </div>
+        <div class="w-1/2 px-10">
+            <h2 class="text-3xl font-bold">
+                About Me
+            </h2>
+            <p class="mt-4" style=" font-family: 'Open Sans', sans-serif;">
+                Hi, I’m <b>Muhammad Ibraheem</b>, an aspiring Frontend Developer with a passion for creating intuitive,
+                user-friendly, and visually appealing web interfaces. With a solid foundation in HTML, CSS, and
+                JavaScript, I love bringing ideas to life through code, focusing on clean design, responsiveness, and
+                seamless user experience.
+            </p>
+            <p class="mt-4" style=" font-family: 'Open Sans', sans-serif;">
+                I’m currently expanding my skills in modern frontend frameworks like React and exploring the world of
+                web animations to add creative flair to my projects. Whether it's building simple landing pages or more
+                complex web applications, I thrive on solving problems and learning new techniques along the way.
+                I’m actively seeking opportunities where I can contribute to exciting projects, collaborate with
+                talented teams, and continue to grow as a developer. Outside of coding, you can find me exploring the
+                latest design trends, tinkering with new tech tools, or diving into a good book.
+            </p>
+            <div class="mt-6">
+                <a href="#contact">
+                    <button
+                        class="bg-highlight text-black px-6 py-3 mt-6 rounded hover:bg-black hover:text-white transition duration-300">
+                        Hire Me
+                    </button>
+                </a>
+                <a href="assets/Muhammad Ibraheem CV (Frontend Developer).pdf" target="_blank">
+                    <button
+                        class="bg-gray-700 text-white px-6 py-3 ml-4 rounded hover:bg-black hover:text-white transition duration-300">Download
+                        CV</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="py-20" id="skills">
+        <h2 class="text-3xl font-bold text-center">
+            My Skills
+        </h2>
+        <div class="flex justify-center mt-10">
+            <div class="w-1/3 px-4">
+                <h3 class="text-xl font-bold">
+                    Frontend Web Designer
+                </h3>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                    <div class="bg-highlight h-2.5 rounded-full" style="width: 85%">
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 px-4">
+                <h3 class="text-xl font-bold">
+                    Freelancer
+                </h3>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                    <div class="bg-highlight h-2.5 rounded-full" style="width: 80%">
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 px-4">
+                <h3 class="text-xl font-bold">
+                    UI/UX Designer
+                </h3>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                    <div class="bg-highlight h-2.5 rounded-full" style="width: 85%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- here is Programming Section -->
+    <section class="py-20 bg-gray-800">
+        <h2 class="text-3xl font-bold text-center">
+            Expertise in
+        </h2>
+        <div class="flex justify-center mt-10">
+            <div class="w-1/3 px-4 text-center">
+                <i class="fa-brands fa-html5 fa-5x" style="color: #f16529;"></i>
+                <h3 class="text-xl font-bold mt-4">
+                    HTML5
+                </h3>
+            </div>
+            <div class="w-1/3 px-4 text-center">
+                <i class="fa-brands fa-css3 fa-5x" style="color: #2965f1;"></i>
+                <h3 class="text-xl font-bold mt-4">
+                    CSS3
+                </h3>
+            </div>
+            <div class="w-1/3 px-4 text-center">
+                <i class="fa-brands fa-js fa-5x" style="color: #f0db4f;"></i>
+                <h3 class="text-xl font-bold mt-4">
+                    JavaScript
+                </h3>
+            </div>
+        </div>
+
+        <!-- Here is 2nd row -->
+        <div class="flex justify-center mt-10">
+            <div class="w-1/3 px-4 text-center">
+                <i class="fa-brands fa-react fa-5x" style="color: #00d8ff;"></i>
+                <h3 class="text-xl font-bold mt-4">
+                    React
+                </h3>
+            </div>
+            <div class="w-1/3 px-4 text-center">
+                <i class="fa-brands fa-angular fa-5x" style="color: #a6120d;"></i>
+                <h3 class="text-xl font-bold mt-4">
+                    Angular
+                </h3>
+            </div>
+            <div class="w-1/3 px-4 text-center">
+                <i class="fa-brands fa-node-js fa-5x" style="color: #3c873a;"></i>
+                <h3 class="text-xl font-bold mt-4">
+                    Node.js
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- here is projects sections -->
+    <section class="py-20" id="certificates">
+        <h2 class="text-3xl font-bold text-center">
+            Certificates
+        </h2>
+        <div class="flex justify-center mt-10">
+            <div class="w-1/3 px-4">
+                <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
+                    src="assets/Certificates/udamy01.jfif" width="300" />
+                <h3 class="text-xl font-bold mt-4 " style="text-align: center;">
+                    Complete JAVASCRIPT with HTML5,CSS3 from zero to Expert-2024
+                </h3>
+            </div>
+            <div class="w-1/3 px-4">
+                <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
+                    src="assets/Certificates/udamy 30 projects.jpg" width="300" />
+                <h3 class="text-xl font-bold mt-4" style="text-align: center;">
+                    Master JavaScript, HTML, and CSS with 30 Projects in 30 Days
+                </h3>
+            </div>
+            <div class="w-1/3 px-4">
+                <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
+                    src="assets/Certificates/codeAlphaCertificate.jfif" width="300" />
+                <h3 class="text-xl font-bold mt-4" style="text-align: center;">
+                    Internship Certificate By CodeAlpha
+                </h3>
+            </div>
+        </div>
+
+        <!-- here is 2nd row -->
+        <div class="flex justify-center mt-10">
+            <div class="w-1/3 px-4">
+                <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
+                    src="assets/Certificates/recommendation.jfif" width="300" />
+                <h3 class="text-xl font-bold mt-4 " style="text-align: center;">
+                    Letter of Recommendation by CodeAlpha
+                </h3>
+            </div>
+            <div class="w-1/3 px-4">
+                <img style="margin: auto;" alt="Certificate" class="rounded" height="300"
+                    src="assets/Certificates/offer letter.jfif" width="300" />
+                <h3 class="text-xl font-bold mt-4" style="text-align: center;">
+                    Offer Letter for Internship By CodeAlpha
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-800" id="Resume">
+        <h2 class="text-3xl font-bold text-center" style="text-align: center;"> Resume </h2>
+        <div class="resume">
+            <div class="w-1/2 px-4">
+                <h3 class="text-xl font-bold"> Education </h3>
+                <div class="mt-4">
+                    <h4 class="text-lg font-bold"> BS Information Technology </h4>
+                    <p class="mt-2"> GC University Hyderabad <span> <b>Continue</b> </span> </p>
+                </div>
+                <div class="mt-4">
+                    <h4 class="text-lg font-bold"> Intermediate </h4>
+                    <p class="mt-2"> BISE Mirpurkhas </p>
+                </div>
+                <div class="mt-4">
+                    <h4 class="text-lg font-bold"> Matriculation </h4>
+                    <p class="mt-2"> BISE Mirpurkhas </p>
+                </div>
+            </div>
+            <div class="w-1/2 px-4">
+                <h3 class="text-xl font-bold"> Experience </h3>
+                <div class="mt-4">
+                    <h4 class="text-lg font-bold"> Freelancer </h4>
+                    <p class="mt-2"> 01 Year Experience as Frontend Developer @ <a href="https://www.fiverr.com/"
+                            target="_blank">Fiver.com</a> </p>
+                </div>
+                <div class="mt-4">
+                    <h4 class="text-lg font-bold"> Working on Next Project </h4>
+                    <p class="mt-2"> Since last Month </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Here is my Mentors -->
+    <section class="py-20 bg-gray-800">
+        <h2 class="text-3xl font-bold text-center">
+            My Mentors
+        </h2>
+        <div class="flex justify-center mt-10">
+            <div class="w-1/5 px-4 text-center ">
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Nabi Bux.jpg"
+                    width="100" />
+                <h4>Nabi Bux</h4>
+            </div>
+            <div class="w-1/5 px-4 text-center ">
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Bari.jpg"
+                    width="100" />
+                <h4>Abdul Bari</h4>
+            </div>
+            <div class="w-1/5 px-4 text-center ">
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/Fakir.png"
+                    width="100" />
+                <h4>Fakir Muhammad</h4>
+            </div>
+            <div class="w-1/5 px-4 text-center ">
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/wazir.jpg"
+                    width="100" />
+                <h4>Wazir Rajar</h4>
+            </div>
+            <div class="w-1/5 px-4 text-center ">
+                <img alt="Mentors" class="mx-auto mx-auto rounded-full" height="auto" src="assets/Mentors/naeem.jpg"
+                    width="100" />
+                <h4>Naeem Chopan</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Have any projects -->
+    <section class="py-20">
+        <h2 class="text-3xl font-bold text-center">
+            Have any Project in Mind?
+        </h2>
+        <p class="text-center mt-4">
+            Just Say Hello!
+        </p>
+        <div class="flex justify-center mt-6" id="contact">
+            <button class="bg-highlight text-black px-6 py-3 rounded" id="contact-button">
+                Contact Me
+            </button>
+        </div>
+    </section>
+
+    <div id="form" class="py-20 bg-gray-800">
+        <div class="visme_d" data-title="Technical Interview Feedback Form" data-url="4d68rwdj-technical-interview-feedback-form?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="96643"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    </div>
+
+
+    <script>
+        document.getElementById('contact-button').addEventListener('click', function () {
+            document.getElementById('form').style.display = 'block';
+        });
+    </script>
+
+    <p class="text-center mt-10">
+        Copyright © 2023 Muhammad Ibraheem. All rights reserved.
+    </p>
+</body>
+
+</html>
