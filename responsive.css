@@ -1,0 +1,104 @@
+/* Base styles */
+:root {
+
+    --primary_color: rgb(242, 197, 15);
+
+
+}
+
+body {
+    position: relative;
+    scroll-behavior: smooth;
+ 
+}
+header {
+    z-index: 1000;
+    position: fixed;
+    top: 5px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(17, 24, 39);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: rgb(25, 32, 45); /* Slightly lighter color on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.responsive-text{
+    display: none;
+
+}
+
+.responsive_image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid blue; */
+
+}
+
+.image{
+    display: none;
+    
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    #menu-toggle {
+        display: block; /* Show the toggle button */
+        transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    #menu-toggle:hover {
+        color: var(--primary_color);
+        transform: scale(1.1); /* Slight zoom effect */
+    }
+
+    #navbar-menu {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        transform: translateX(-100%); /* Hidden off-screen initially */
+        opacity: 0; /* Fully transparent */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        font-size: 1.5rem;
+        gap: 3vw;
+        background-color: rgb(17, 24, 39);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        padding-top: 8vh;
+        width: 300px;
+        height: 100vh;
+    }
+
+    #navbar-menu.active {
+        transform: translateX(0); /* Slide in from the left */
+        opacity: 1; /* Fully visible */
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    #navbar-menu a {
+        margin-bottom: 10px;
+        text-align: center;
+        transition: color 0.3s ease-in-out;
+    }
+
+    #navbar-menu a:hover {
+        color: var(--primary_color); /* Highlight color on hover */
+    }
+
+    .parent {
+        gap: 0; /* Adjust spacing for better alignment */
+    }
+}

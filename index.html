@@ -12,46 +12,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css" media="(max-width: 768px)" />
 
 </head>
 
 <body class="bg-gray-900 text-white">
 
     <!-- Here is our Navbar -->
-    <header class="flex justify-between items-center p-6 " style=" position: sticky;
-    top: -28px;
-    transition: all;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));">
-        <h1 class="text-3xl font-bold text-highlight" style="cursor: pointer;">
+    <header class="flex justify-between items-center p-6 bg-dark sticky top-0 z-50">
+        <!-- Logo -->
+
+        <h1 class="text-3xl font-bold text-highlight cursor-pointer responsive-text">
             Mr.Coder
         </h1>
-        <nav class="space-x-6 parent" >
-            <a class="hover:text-highlight items" href="#home">
-                Home
-            </a>
-            <a class="hover:text-highlight items" href="#about">
-                About
-            </a>
-            <a class="hover:text-highlight items" href="#skills">
-                Skills
-            </a>
-            <a class="hover:text-highlight items" href="#certificates">
-                Certificates
-            </a>
-            <a class="hover:text-highlight items" href="#Resume">
-                Resume
-            </a>
-            <a class="hover:text-highlight items" href="#contact">
-                Contact
-            </a>
+
+
+        <div class="responsive_image ">
+            <img class="mx-auto rounded-full"  src="img/cover.webp" alt="Cover Photo">
+        </div>
+
+
+
+    
+        <!-- Hamburger Menu Button -->
+        <button id="menu-toggle" class="block lg:hidden text-white text-3xl focus:outline-none">
+            ☰
+        </button>
+    
+        <!-- Navbar Links -->
+        <nav id="navbar-menu" class="hidden lg:flex flex-col lg:flex-row lg:space-x-6 absolute lg:static bg-dark lg:bg-transparent top-16 right-4 lg:top-auto lg:right-auto rounded-md lg:rounded-none shadow-lg lg:shadow-none px-6 lg:px-0 py-4 lg:py-0">
+            <a class="hover:text-highlight items block lg:inline-block mb-4 lg:mb-0" href="#home">Home</a>
+            <a class="hover:text-highlight items block lg:inline-block mb-4 lg:mb-0" href="#about">About</a>
+            <a class="hover:text-highlight items block lg:inline-block mb-4 lg:mb-0" href="#skills">Skills</a>
+            <a class="hover:text-highlight items block lg:inline-block mb-4 lg:mb-0" href="#certificates">Certificates</a>
+            <a class="hover:text-highlight items block lg:inline-block mb-4 lg:mb-0" href="#resume">Resume</a>
+            <a class="hover:text-highlight items block lg:inline-block" href="#contact">Contact</a>
         </nav>
-        <a href="#contact">
-            <button
-                class="bg-highlight text-black px-6 py-3 mt-6 rounded hover:bg-black hover:text-white transition duration-300">
+    
+        <!-- Call-to-Action Button -->
+        <a href="#contact" class="hidden lg:block">
+            <button class="bg-highlight text-black px-6 py-3 rounded hover:bg-black hover:text-white transition duration-300">
                 Hire Me
             </button>
         </a>
     </header>
+    
 
     <!-- Here is our Content section-->
     <section class="text-center py-20 cover" id="home">
@@ -186,7 +191,7 @@
         </div>
 
         <!-- Here is 2nd row -->
-     
+
     </section>
 
     <!-- here is projects sections -->
@@ -320,7 +325,10 @@
     </section>
 
     <div id="form" class="py-20 bg-gray-800">
-        <div class="visme_d" data-title="Technical Interview Feedback Form" data-url="4d68rwdj-technical-interview-feedback-form?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="96643"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+        <div class="visme_d" data-title="Technical Interview Feedback Form"
+            data-url="4d68rwdj-technical-interview-feedback-form?fullPage=true" data-domain="forms"
+            data-full-page="true" data-min-height="100vh" data-form-id="96643"></div>
+        <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
     </div>
 
 
@@ -333,6 +341,9 @@
     <p class="text-center mt-10">
         Copyright © 2023 Muhammad Ibraheem. All rights reserved.
     </p>
+
+<script src="script.js"></script>
+
 </body>
 
 </html>
