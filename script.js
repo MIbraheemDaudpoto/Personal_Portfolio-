@@ -5,7 +5,9 @@ document.getElementById("menu-toggle").addEventListener("click", function (event
 
     // Toggle the menu visibility
     navbarMenu.classList.toggle("active");
-
+navbarMenu.addEventListener("click",function(){
+    navbarMenu.classList.remove("active");
+})
     // Prevent the body click from toggling immediately when clicking the button
     event.stopPropagation();
 
@@ -18,4 +20,6 @@ document.getElementById("menu-toggle").addEventListener("click", function (event
             body.removeEventListener("click", bodyClickListener);
         }
     });
+
+
 });

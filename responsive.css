@@ -57,6 +57,11 @@ header:hover {
 }
 
 
+.navi{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 #menu-toggle {
     display: block;
@@ -79,7 +84,7 @@ header:hover {
     flex-direction: column;
     position: absolute;
     top: 150px;
-    right: 0;
+    left: 0;
     font-size: 1.5rem;
     gap: 3vw;
     background-color: rgb(17, 24, 39);
@@ -116,6 +121,10 @@ header:hover {
 }
 
 
+#home{
+    /* border: 2px solid green; */
+    height: 80vh;
+}
 
 #about {
     /* border: 2px solid blue; */
