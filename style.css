@@ -1,9 +1,11 @@
 :root {
 
     --primary_color: rgb(242, 197, 15);
-
+    transition: all 0.3s ease-in-out;
 
 }
+
+
 
 
 
@@ -13,6 +15,16 @@ body {
     color: #ffffff;
     scroll-behavior: smooth;
     position: relative;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +57,10 @@ header:hover {
     /* border: 2px solid blue; */
 
 }
-
+#menu-toggle {
+    display: none;
+    transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+}
 
 .text-highlight {
     color: #f1c40f;

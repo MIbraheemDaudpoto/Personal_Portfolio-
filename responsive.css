@@ -2,15 +2,15 @@
 :root {
 
     --primary_color: rgb(242, 197, 15);
-
-
+    transition: all 0.3s ease-in-out;
 }
 
 body {
     position: relative;
     scroll-behavior: smooth;
- 
+
 }
+
 header {
     z-index: 1000;
     position: fixed;
@@ -24,15 +24,21 @@ header {
 }
 
 header:hover {
-    background-color: rgb(25, 32, 45); /* Slightly lighter color on hover */
+    background-color: rgb(25, 32, 45);
+    /* Slightly lighter color on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#home h1 {
+    font-size: 1.9rem;
+
 }
 
 #menu-toggle {
     display: none;
 }
 
-.responsive-text{
+.responsive-text {
     display: none;
 
 }
@@ -45,60 +51,156 @@ header:hover {
 
 }
 
-.image{
+.image {
     display: none;
-    
+
 }
 
-/* Responsive styles */
-@media (max-width: 1024px) {
-    #menu-toggle {
-        display: block; /* Show the toggle button */
-        transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
-    }
 
-    #menu-toggle:hover {
-        color: var(--primary_color);
-        transform: scale(1.1); /* Slight zoom effect */
-    }
 
-    #navbar-menu {
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        transform: translateX(-100%); /* Hidden off-screen initially */
-        opacity: 0; /* Fully transparent */
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 150px;
-        right: 0;
-        font-size: 1.5rem;
-        gap: 3vw;
-        background-color: rgb(17, 24, 39);
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        padding: 15px;
-        padding-top: 8vh;
-        width: 300px;
-        height: 100vh;
-    }
+#menu-toggle {
+    display: block;
+    transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+}
 
-    #navbar-menu.active {
-        transform: translateX(0); /* Slide in from the left */
-        opacity: 1; /* Fully visible */
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
+#menu-toggle:hover {
+    color: var(--primary_color);
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
 
-    #navbar-menu a {
-        margin-bottom: 10px;
-        text-align: center;
-        transition: color 0.3s ease-in-out;
-    }
+#navbar-menu {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(-100%);
+    /* Hidden off-screen initially */
+    opacity: 0;
+    /* Fully transparent */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    font-size: 1.5rem;
+    gap: 3vw;
+    background-color: rgb(17, 24, 39);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    padding-top: 8vh;
+    width: 300px;
+    height: 100vh;
+}
 
-    #navbar-menu a:hover {
-        color: var(--primary_color); /* Highlight color on hover */
-    }
+#navbar-menu.active {
+    transform: translateX(0);
+    /* Slide in from the left */
+    opacity: 1;
+    /* Fully visible */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
 
-    .parent {
-        gap: 0; /* Adjust spacing for better alignment */
-    }
+#navbar-menu a {
+    margin-bottom: 10px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+#navbar-menu a:hover {
+    color: var(--primary_color);
+    /* Highlight color on hover */
+}
+
+.parent {
+    gap: 0;
+    /* Adjust spacing for better alignment */
+}
+
+
+
+#about {
+    /* border: 2px solid blue; */
+    flex-direction: column;
+
+
+}
+
+#about .w-1\/2 {
+    width: 90vw;
+    text-align: justify;
+
+}
+
+
+#about .font-bold {
+    color: var(--primary_color);
+    text-align: center;
+
+}
+
+#about .mt-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid; */
+    width: 100vw;   
+}
+
+#skills .w-1\/3 {
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.text-3xl{
+    color: var(--primary_color);
+}
+
+
+#Expertise .mt-10{
+        flex-direction: row;
+}
+
+
+#certificates .w-1\/3{
+    width: 100%;
+    margin-top: 5vh;
+
+}
+
+.resume{
+    flex-direction: column;
+    gap: 10vh;
+width: 100vw;
+
+}
+
+.resume .mt-4{
+    width: 100%;
+    margin-left: 6rem;
+}
+
+#Mentors .mt-10{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#Mentors .w-1\/5{
+    width: 50%;
+
+}
+
+#footer{
+    font-size: 0.7rem;
+
 }
